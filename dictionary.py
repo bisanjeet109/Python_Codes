@@ -1,44 +1,35 @@
-"""
-a dict is a special type of composite datatype that can contain
-two values for a single item.
-these two values are
-1--key value
-2--data value
+#comma seperated key value pairs enclosed within{}
+#{'key1':value,'key2':value}
+"""groceries={'milk':60,'biscuits':20,'rice':90,'bread':30}
+print(groceries)
+#print(type(groceries))
+#print(len(groceries))
 
-1----------------
-a key is an identifier for an data valuue
-all the keysb available in the dictionary are immutable
-while the data values attached with the key are mutable
-a dict is defined with curly brackets
-2nd~ the key and its data are defined by colon
-3rd ~~ multip[ple of key and data are sepereted with a coma
+#dictionaries are mutable--------------------------------------if we can change the value then that is called mutable
+groceries['milk']=100
+print(groceries)
 
-"""
+groceries['wheat']=76
+print(groceries)  """                 #dictionaries can be modified
+                                  #wwe can add new key to the dictionary
 
-d={
-    "key01":"value01",
-    "India":"delhi",
-    "uk" : "london"
-}
-print(d)
-print(d.keys())
-print(d.values())
-print(d.items())
+ #LECTURE 2------------------------
+student1={'maths':80.5,'eng':54,'phy':66}
+#fetch the marks for phy?
+#ans---
+print(student1['phy'])
+print(student1.get('phy'))                  #bothv are the methods tfo fetch
+#get()
+print(student1.get('chem'))              # uwill get none here
+#add
+print(student1.get('chem','40'))
 
+#membership operator------(=>)
+print('eng' in student1)                   #the membership operator doesnt look for the value ,it look for the key
 
+student2={"maths":55,"phy":34,"bio":93,"sst":77}
+student1.update(student2)
 
- #methods runs only in dictionary
-
-"""
-clear() removes all the elements from the dictionary
-copy() Returns a copy of the dictionary
-fromkeys()returns a dict with the specified 
-get()
-items()
-keys()
-pop()
-popitem()
-setdefault()
-update()
-values()
-"""
+print(student1)
+student1.pop("eng")
+print(student1)

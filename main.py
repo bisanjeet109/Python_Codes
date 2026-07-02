@@ -1,18 +1,31 @@
-print("hello world")
+#num1 =10
+#num2=30
+#result=num1+num2
+#print(result)
+#addition of 100and 200
+#print("additon of ",num1,"and",num2,"is",result)
 
-a=[[1,2,3],
-   [3,4,5],
-   [4,5,6]]
-b=[[5,6,7,2],
-   [7,8,9,3],
-   [6,7,8,9]]
+"""firstname =input()
+age=input()
+print("name",firstname,"age",age)
+
+#firstname=input("enter your name ")
+#age=input("enter your age ")
+
+#print("name",firstname,"age",age)
+year=input("what is the current year?")
+age=input("what is the current age?")
+
+born_year=int(year)-int(age)
+print("born_year=",born_year)
 
 
-result=[[0,0,0,0], [0,0,0,0],[0,0,0,0]]
-for i in range(3):
-    for j in range(4):
-        for k in range(3):
-         result[i][j]+=a[i][k]*b[k][j]
-for i in result:
-         print(i)
+mathematical properties-----------
+
+print(max(1,2,3,4,5,9,7,8,6))
+print(min(1,2,4,3,5,9,7,8,6))
+print(abs(-22222))
+print(pow(2,4))"""
+
+
 
